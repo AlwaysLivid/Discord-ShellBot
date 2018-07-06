@@ -1,5 +1,5 @@
 # ShellBot
-Perform administrative tasks remotely via Discord, without the need of port forwarding and other complicated networking stuff.
+Perform administrative tasks remotely via Discord, without the need of port forwarding and other complicated networking stuff. This bot was made for experimental/educational purposes.
 
 # Features
 You (and only you!) can run commands on your Windows/Mac/Linux workstation by simply ordering the bot to do so.
