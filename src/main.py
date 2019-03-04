@@ -8,11 +8,11 @@
 
 print("""
       .__           .__  .__ ___.           __  
-  _____|  |__   ____ |  | |  |\_ |__   _____/  |_ 
- /  ___/  |  \_/ __ \|  | |  | | __ \ /  _ \   __\
- \___ \|   Y  \  ___/|  |_|  |_| \_\ (  <_> )  |
-/____  >___|  /\___  >____/____/___  /\____/|__|
-     \/     \/     \/              \/
+  _____|  |__   ____ |  | |  |\\_ |__   _____/  |_ 
+ /  ___/  |  \\_/ __ \\|  | |  | | __ \\ /  _ \\   __\\ 
+ \\___ \\|   Y  \\  ___/|  |_|  |_| \\_\\ (  <_> )  |
+/____  >___|  /\\___  >____/____/___  /\\____/|__|
+     \\/     \\/     \\/              \\/
          Copyright (C) 2019 AlwaysLivid
 
 =============================================================
@@ -55,8 +55,7 @@ logging.basicConfig(
 )
 
 try:
-    from private import client_secret
-    client_secret = private.client_secret
+    from private import *
     logging.warning("Using private.py file!")
 except ImportError:
     logging.info("The file private.py was not found.")

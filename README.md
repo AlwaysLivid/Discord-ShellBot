@@ -6,7 +6,7 @@ Perform administrative tasks remotely via Discord, without the need of port forw
 
 ## Requirements
 
-* Python 3
+* Python 3.5.3+
 * [discord.py (rewrite)](https://github.com/Rapptz/discord.py/tree/rewrite)
 
 ## Setup
