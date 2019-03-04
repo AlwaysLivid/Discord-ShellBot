@@ -57,7 +57,10 @@ logging.basicConfig(
 try:
     from private import client_secret
     client_secret = private.client_secret
+    logging.warning("Using private.py file!")
 except ImportError:
+	logging.info("The file private.py was not found.")
+	logging.warning("Using environment variable instead.")
     client_secret = os.environ['CLIENT_SECRET']
 
 bot = commands.Bot(command_prefix=config.prefix, description=config.description)
