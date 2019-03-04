@@ -42,7 +42,7 @@ require additional user input.
 import discord
 from discord.ext import commands
 import subprocess
-import logging, random, sys
+import logging, os, random, sys
 import config
 
 logging.basicConfig(

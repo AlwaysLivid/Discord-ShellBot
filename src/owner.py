@@ -9,12 +9,11 @@
 if __name__ == "__main__":
     exit()
 
-import subprocess
-import logging
-import config
 import discord
-import sys
 from discord.ext import commands
+import subprocess
+import logging, os, random, sys
+import config
 
 class Owner:
     def __init__(self, bot):
