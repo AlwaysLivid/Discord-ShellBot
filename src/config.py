@@ -1,7 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 '''
-Developed with <3, the power of water which is necessary for me to survive and for the sake of doing so.
 @author: AlwaysLivid
+@description: Perform administrative tasks remotely via Discord, without the need of port forwarding and other complicated networking stuff.
 '''
+
 if __name__ != "__main__":
     # Bot Configuration
     prefix = "s!"
@@ -9,7 +13,7 @@ if __name__ != "__main__":
     extensions = ['owner']
     statuses = ['with the subprocess module.', 'with a random TTY terminal.', 'with an insecure eval() function.']
     shell = True
-    # Additional Color Configuration
+    # Color Configuration
     neutral_green = 0x98fb98 # Basic functions, such as the ping command. 
     admin_color = 0x00ff00 # Administrative operations.
     success_green = 0x0000ff # Successful operations.

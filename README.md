@@ -1,23 +1,43 @@
+[![Build Status](https://travis-ci.org/alwayslivid/ShellBot.svg?branch=master)](https://travis-ci.org/alwayslivid/ShellBot)
+
 # ShellBot
-Perform administrative tasks remotely via Discord, without the need of port forwarding and other complicated networking stuff. This bot was made for experimental/educational purposes.
 
-# Features
-You (and only you!) can run commands on your Windows/Mac/Linux workstation by simply ordering the bot to do so.
-Just invite the bot to your server and run ```s!exec```!.
+Perform administrative tasks remotely via Discord, without the need of port forwarding and other complicated networking stuff. This bot was made for personal use.
 
-# Additional Commands
-### **s!cogmgmt**: Add your own cogs.
-*Syntax: s!cogmgmt <enable/disable> <cog>*
-### **s!reload**: Reload the bot.
-### **s!disablebot**: Turn off the bot.
+## Requirements
 
-# Additional Notes
-If you'd like to give access to the bot to everyone, then just open up *owner.py* using any text editor that doesn't start with v and ends with im, hit *CTRL + F* and finally, delete all the lines that contain the following closure: ```@commands.is_owner()```.
+* Python 3
+* [discord.py (rewrite)](https://github.com/Rapptz/discord.py/tree/rewrite)
 
-Also, please don't try to run commands such as *python*, *vim*, *rm -rf* or *node* through Discord. This bot was designed with basic commands such as *dir* (Windows), *ls*, *ping* and that sort of simple stuff. You won't be able to enter additional input or interfere with the bot in any way until a return code's returned.
+## Setup
 
-**YOU'RE ON YOUR OWN, RUN THIS BOT AT YOUR OWN RISK, NEVER TRUST UNTRUSTED INPUT.**
+* Create a new bot account [here.](https://discordapp.com/developers)
+* Obtain your client secret.
+* Make a new Python file (*.py*) and enter *client_secret = "<CLIENT SECRET>"*.
+* Alternatively, add the client secret to an environment variable with the key *"CLIENT_SECRET"*.
 
-# Disclaimer
+## Usage
 
-**THE CODE IS PROVIDED AS IS AND WAS MADE FOR PERSONAL USE AND ONLY. I'M IN NO WAY RESPONSIBLE FOR ANY SORT OF DATA LOSS, HARDWARE DAMAGE, EXPLOSION OF SAID HARDWARE OR ANIMAL-RELATED DEATHS. (Read the license for more details)**
+* s!cogmgmt: Add your own cogs.
+* *Syntax: s!cogmgmt <enable/disable> <cog>*
+* s!reload: Reload the bot.
+* s!disablebot: Turn off the bot.
+
+### Disclaimer
+
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions; read the LICENSE file for details.
+
+This bot was made for personal use and only the bot owner is
+permitted to perform any sort of operation.
+
+Never trust untrusted input.
+
+The official documentation does not recommend the use of the
+subprocess module without any sort of input sanitization.
+
+This bot currently does not support interactive programs that
+require additional user input.
+
+https://docs.python.org/3/library/subprocess.html

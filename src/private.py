@@ -1,6 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 '''
-Developed with <3, the power of water which is necessary for me to survive and for the sake of doing so.
 @author: AlwaysLivid
+@description: Perform administrative tasks remotely via Discord, without the need of port forwarding and other complicated networking stuff.
 '''
 
-token = ""
+client_secret = ""
