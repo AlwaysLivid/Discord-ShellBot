@@ -77,7 +77,7 @@ async def on_ready():
     await CogLoader()
     activity = random.choice(config.statuses)
     await bot.change_presence(activity=discord.Game(name=activity)) 
-    if (os.getenv('CI') == True) or (os.getenv('CONTINUOUS_INTEGRATION') == True)
+    if not (os.getenv('CI') == None or os.getenv('CI') == False) or not (os.getenv('CONTINUOUS_INTEGRATION') == None or os.getenv('CONTINUOUS_INTEGRATION') == False):
         logging.critical("CI detected!")
         logging.critical("Everything seems to be fine. Exiting...")
         exit()           
